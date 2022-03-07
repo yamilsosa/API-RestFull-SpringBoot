@@ -15,7 +15,8 @@ public class ProductoService {
     ProductoRepository productoRepository;
 
     public ProductoModel guardarProducto(ProductoModel producto) {
-        return productoRepository.save(producto);
+        return producto;
+        //return productoRepository.save(producto);
     }
 
     public Optional<ProductoModel> obtenerProducto(Long id) {
